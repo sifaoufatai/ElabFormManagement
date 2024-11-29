@@ -1,0 +1,1043 @@
+{
+    "elabftw": {
+        "display_main_text": false,
+        "extra_fields_groups": [
+            {
+                "id": 1,
+                "name": "GENERIC_BIDS_PROJECT"
+            },
+            {
+                "id": 2,
+                "name": "GENERIC_BIDS_PARTICIPANT"
+            },
+            {
+                "id": 3,
+                "name": "GENERIC_BIDS_SESSION"
+            },
+            {
+                "id": 4,
+                "name": "EyeTracking_BIDS_METADATA"
+            },
+            {
+                "id": 5,
+                "name": "Run 1"
+            },
+            {
+                "id": 6,
+                "name": "Run 2"
+            },
+            {
+                "id": 7,
+                "name": "Run 3"
+            },
+            {
+                "id": 8,
+                "name": "Run 4"
+            },
+            {
+                "id": 9,
+                "name": "Run 5"
+            },
+            {
+                "id": 10,
+                "name": "Run 6"
+            },
+            {
+                "id": 11,
+                "name": "Run 7"
+            },
+            {
+                "id": 12,
+                "name": "Run 8"
+            },
+            {
+                "id": 13,
+                "name": "Run 9"
+            },
+            {
+                "id": 14,
+                "name": "Run 10"
+            },
+            {
+                "id": 15,
+                "name": "LaureProjectSPEC"
+            }
+        ]
+    },
+    "extra_fields": {
+        "age": {
+            "type": "number",
+            "unit": "",
+            "units": [
+                "years",
+                "months"
+            ],
+            "value": "",
+            "group_id": 2,
+            "position": 5,
+            "description": "GDPR !!!. In years or months. Ex: '42 or 0.4'"
+        },
+        "sex": {
+            "type": "radio",
+            "options": [
+                "F",
+                "M",
+                "Others"
+            ],
+            "group_id": 2,
+            "position": 7,
+            "description": "GDPR"
+        },
+        "group": {
+            "type": "text",
+            "value": "",
+            "group_id": 2,
+            "position": 9,
+            "description": "Experimental group. Ex: 'control, under 10 years, ...'"
+        },
+        "Strain": {
+            "type": "text",
+            "value": "",
+            "group_id": 2,
+            "position": 4,
+            "description": "The strain of the subject",
+            "blank_value_on_duplicate": false
+        },
+        "Weight": {
+            "type": "number",
+            "value": "",
+            "group_id": 2,
+            "position": 10,
+            "description": "The weight of the subject [in grams]",
+            "blank_value_on_duplicate": false
+        },
+        "Authors": {
+            "type": "text",
+            "value": "",
+            "group_id": 1,
+            "position": 1,
+            "description": "List of individuals who contributed to the creation/curation of the dataset."
+        },
+        "Species": {
+            "type": "text",
+            "value": "",
+            "group_id": 2,
+            "position": 3
+        },
+        "Modality": {
+            "type": "select",
+            "value": [
+                "intracellular microelectrode signals"
+            ],
+            "options": [
+                "extracellular microelectrode signals",
+                "intracellular microelectrode signals",
+                "EEG",
+                "EMG",
+                "ECog",
+                "optical imaging",
+                "behaviour",
+                "stimulation (specify below)"
+            ],
+            "group_id": 2,
+            "position": "5",
+            "description": "The modalities recorded",
+            "allow_multi_values": true,
+            "blank_value_on_duplicate": true
+        },
+        "BirthDate": {
+            "type": "datetime-local",
+            "value": "",
+            "group_id": 2,
+            "position": 6
+        },
+        "DatasetDOI": {
+            "type": "text",
+            "value": "",
+            "group_id": 1,
+            "position": 2,
+            "description": "The Digital Object Identifier of the dataset (not the corresponding paper)."
+        },
+        "Subject ID": {
+            "type": "text",
+            "value": "",
+            "group_id": 2,
+            "position": 1,
+            "description": "subject number  or monkey name or etc"
+        },
+        "handedness": {
+            "type": "radio",
+            "options": [
+                "left",
+                "right",
+                "ambidextrous"
+            ],
+            "group_id": 2,
+            "position": 8,
+            "description": "GDPR"
+        },
+        "session_id": {
+            "type": "text",
+            "value": "",
+            "group_id": 3,
+            "position": 0,
+            "required": true,
+            "description": "Ex: '01 or predrug or 20231206'"
+        },
+        "DatasetType": {
+            "type": "text",
+            "value": "",
+            "group_id": 1,
+            "position": 3,
+            "description": "The interpretation of the dataset. For backwards compatibility, the default value is \"raw\".  Must be one of: \"raw\", \"derivative\"."
+        },
+        "GeneratedBy": {
+            "type": "text",
+            "value": "",
+            "group_id": 1,
+            "position": 4,
+            "description": "Used to specify provenance of the dataset."
+        },
+        "DatasetLinks": {
+            "type": "text",
+            "value": "",
+            "group_id": 1,
+            "position": 5,
+            "description": "Used to map a given <dataset-name> from a BIDS URI of the form bids:"
+        },
+        "Subject GUID": {
+            "type": "text",
+            "value": "",
+            "group_id": 2,
+            "position": 2
+        },
+        "Experimenter 1": {
+            "type": "text",
+            "value": "",
+            "group_id": 1,
+            "position": 7,
+            "description": " Ex: 'Odile De Ray'"
+        },
+        "Experimenter 2": {
+            "type": "text",
+            "value": "",
+            "group_id": 1,
+            "position": 8,
+            "description": " Ex: 'Odile De Ray'"
+        },
+        "Experimenter 3": {
+            "type": "text",
+            "value": "",
+            "group_id": 1,
+            "position": 9,
+            "description": " Ex: 'Odile De Ray'"
+        },
+        "Experiment name": {
+            "type": "text",
+            "value": "",
+            "group_id": 1,
+            "position": 6,
+            "description": "En fran\u00e7ais: nom de la manip incluant X sujets / Experiment name including around X subjects"
+        },
+        "Session duration": {
+            "type": "number",
+            "value": "91",
+            "group_id": 3,
+            "position": "3",
+            "description": "The duration of the session [in minutes]",
+            "blank_value_on_duplicate": true
+        },
+        "HeadCircumference": {
+            "type": "number",
+            "unit": "",
+            "units": [
+                "cm"
+            ],
+            "value": "",
+            "group_id": 2,
+            "position": 11,
+            "description": "Ex: '53.5 or 55'"
+        },
+        "Ethical Protocol Identifier": {
+            "type": "text",
+            "value": "defaut format in '5X-16X-vX'",
+            "group_id": 1,
+            "position": 0,
+            "description": "The official ethical protocol id "
+        },
+        "Columns": {
+            "type": "text",
+            "value": "",
+            "group_id": 4,
+            "position": 3,
+            "description": "Names of columns in file.",
+            "blank_value_on_duplicate": false
+        },
+        "Comment": {
+            "type": "text",
+            "value": "",
+            "group_id": 4,
+            "description": "Add comments if needed"
+        },
+        "PhysioType": {
+            "type": "text",
+            "value": "eyetrack",
+            "group_id": 4,
+            "position": 8,
+            "description": "Defines the specific type of physiological recording",
+            "blank_value_on_duplicate": false
+        },
+        "RecordedEye": {
+            "type": "select",
+            "value": [
+                "left"
+            ],
+            "options": [
+                "left",
+                "right",
+                "cyclopean"
+            ],
+            "group_id": 4,
+            "position": 14,
+            "description": "Indicates the eye tracked",
+            "allow_multi_values": true,
+            "blank_value_on_duplicate": false
+        },
+        "Manufacturer": {
+            "type": "text",
+            "value": "",
+            "group_id": 4,
+            "position": 5,
+            "description": "Manufacturer of the equipment that produced the measurements.",
+            "blank_value_on_duplicate": false
+        },
+        "PupilFitMethod": {
+            "type": "select",
+            "value": "centre-of-mass",
+            "options": [
+                "centre-of-mass",
+                "ellipse"
+            ],
+            "group_id": 4,
+            "position": 24,
+            "description": "The method employed for fitting the pupil",
+            "blank_value_on_duplicate": false
+        },
+        "RawDataFilters": {
+            "type": "text",
+            "value": "",
+            "group_id": 4,
+            "position": 25,
+            "description": "Filter settings applied to eye-movement raw data.",
+            "blank_value_on_duplicate": false
+        },
+        "CalibrationType": {
+            "type": "text",
+            "value": "",
+            "group_id": 4,
+            "position": 16,
+            "description": "The type of the calibration procedure executed last",
+            "blank_value_on_duplicate": false
+        },
+        "CalibrationUnit": {
+            "type": "select",
+            "value": "pixel",
+            "options": [
+                "pixel",
+                "mm",
+                "cm"
+            ],
+            "group_id": 4,
+            "position": 17,
+            "description": "Unit of \"CalibrationPosition\". ",
+            "blank_value_on_duplicate": false
+        },
+        "CalibrationCount": {
+            "type": "number",
+            "unit": "",
+            "units": [],
+            "value": "",
+            "group_id": 4,
+            "position": 14,
+            "description": "The number of calibrations corresponding to this run.",
+            "blank_value_on_duplicate": false
+        },
+        "SoftwareVersions": {
+            "type": "text",
+            "value": "",
+            "group_id": 4,
+            "position": 7,
+            "description": "Manufacturer's designation of software version",
+            "blank_value_on_duplicate": false
+        },
+        "EyeCameraSettings": {
+            "type": "text",
+            "value": "",
+            "group_id": 4,
+            "position": 18,
+            "description": "A field to store any settings that influence the resolution and quality of the eye imagery",
+            "blank_value_on_duplicate": false
+        },
+        "EyeTrackingMethod": {
+            "type": "text",
+            "value": "",
+            "group_id": 4,
+            "position": 24,
+            "description": "Method used to track gaze or pupil position",
+            "blank_value_on_duplicate": false
+        },
+        "SamplingFrequency": {
+            "type": "number",
+            "unit": "",
+            "units": [],
+            "value": "",
+            "group_id": 4,
+            "position": 1,
+            "description": "Sampling frequency (in Hz) of all the data in the recording",
+            "blank_value_on_duplicate": false
+        },
+        "DeviceSerialNumber": {
+            "type": "text",
+            "value": "",
+            "group_id": 4,
+            "position": 4,
+            "description": "The serial number of the equipment that produced the measurements",
+            "blank_value_on_duplicate": false
+        },
+        "EyeTrackerDistance": {
+            "type": "number",
+            "unit": "meter",
+            "units": [
+                "meter",
+                "cm"
+            ],
+            "value": "",
+            "group_id": 4,
+            "position": 19,
+            "description": "Distance (in meters) between the eye-tracker and the participant eye(s).",
+            "blank_value_on_duplicate": false
+        },
+        "CalibrationPosition": {
+            "type": "text",
+            "value": "",
+            "group_id": 4,
+            "position": 15,
+            "description": "The type of the calibration procedure executed last",
+            "blank_value_on_duplicate": false
+        },
+        "GazeMappingSettings": {
+            "type": "text",
+            "value": "",
+            "group_id": 4,
+            "position": 22,
+            "description": "Description of gaze-mapping settings. ",
+            "blank_value_on_duplicate": false
+        },
+        "ScreenAOIDefinition": {
+            "type": "text",
+            "value": "",
+            "group_id": 4,
+            "position": 26,
+            "description": "A description of the shape of the Screen AOIs and what coordinates are used.",
+            "blank_value_on_duplicate": false
+        },
+        "SampleCoordinateUnits": {
+            "type": "select",
+            "value": "pixel",
+            "options": [
+                "pixel",
+                "mm",
+                "cm"
+            ],
+            "group_id": 4,
+            "position": 11,
+            "blank_value_on_duplicate": false
+        },
+        "EnvironmentCoordinates": {
+            "type": "text",
+            "value": "",
+            "group_id": 4,
+            "position": 9,
+            "description": "Coordinates origin (or zero), for gaze-on-screen coordinates",
+            "blank_value_on_duplicate": false
+        },
+        "ManufacturersModelName": {
+            "type": "text",
+            "value": "",
+            "group_id": 4,
+            "position": 6,
+            "description": "Manufacturer's model name of the equipment that produced the measurements.",
+            "blank_value_on_duplicate": false
+        },
+        "SampleCoordinateSystem": {
+            "type": "select",
+            "value": "gaze-on-screen",
+            "options": [
+                "gaze-on-screen",
+                "eye-in-head",
+                "gaze-in-world"
+            ],
+            "group_id": 4,
+            "position": 12,
+            "description": "Coordinate system of the gaze position recordings",
+            "allow_multi_values": true,
+            "blank_value_on_duplicate": false
+        },
+        "AverageCalibrationError": {
+            "type": "number",
+            "unit": "",
+            "units": [],
+            "value": "",
+            "group_id": 4,
+            "position": 13,
+            "description": "Average calibration error in visual degree. ",
+            "blank_value_on_duplicate": false
+        },
+        "MaximalCalibrationError": {
+            "type": "number",
+            "unit": "degrees",
+            "units": [
+                "degrees"
+            ],
+            "value": "",
+            "group_id": 4,
+            "position": 23,
+            "description": "Maximal calibration error in degrees",
+            "blank_value_on_duplicate": false
+        },
+        "FeatureDetectionSettings": {
+            "type": "text",
+            "value": "",
+            "group_id": 4,
+            "position": 21,
+            "description": "Description of feature detection settings. For example, minimum/maximum pupil size.",
+            "blank_value_on_duplicate": false
+        },
+        "TaskName_1": {
+            "type": "text",
+            "value": "",
+            "group_id": 5,
+            "position": 1,
+            "required": true,
+            "description": "Code name of the task (no space and only alphanumeric characters).\n Ex: 'rest or facesnback or headnodding'"
+        },
+        "EventsSet_1": {
+            "type": "text",
+            "value": "",
+            "group_id": 5,
+            "position": 4,
+            "description": "Details about the events associated with this set."
+        },
+        "RunNumber_1": {
+            "type": "text",
+            "value": "",
+            "group_id": 5,
+            "position": 0
+        },
+        "StartTime_1": {
+            "type": "text",
+            "value": "",
+            "group_id": 5,
+            "position": 5
+        },
+        "RunComment_1": {
+            "type": "text",
+            "value": "",
+            "group_id": 5,
+            "position": 6,
+            "description": "Comment about the subject behavior during the run."
+        },
+        "Acquisition_1": {
+            "type": "text",
+            "value": "",
+            "group_id": 5,
+            "position": 3,
+            "description": "Details about the acquisition process."
+        },
+        "TaskDescription_1": {
+            "type": "text",
+            "value": "",
+            "group_id": 5,
+            "position": 2,
+            "description": "Description of the task"
+        },
+        "TaskName_2": {
+            "type": "text",
+            "value": "",
+            "group_id": 6,
+            "position": 1,
+            "required": true,
+            "description": "Code name of the task (no space and only alphanumeric characters).\n Ex: 'rest or facesnback or headnodding'"
+        },
+        "EventsSet_2": {
+            "type": "text",
+            "value": "",
+            "group_id": 6,
+            "position": 4,
+            "description": "Details about the events associated with this set."
+        },
+        "RunNumber_2": {
+            "type": "text",
+            "value": "",
+            "group_id": 6,
+            "position": 0
+        },
+        "StartTime_2": {
+            "type": "text",
+            "value": "",
+            "group_id": 6,
+            "position": 5
+        },
+        "RunComment_2": {
+            "type": "text",
+            "value": "",
+            "group_id": 6,
+            "position": 6,
+            "description": "Comment about the subject behavior during the run."
+        },
+        "Acquisition_2": {
+            "type": "text",
+            "value": "",
+            "group_id": 6,
+            "position": 3,
+            "description": "Details about the acquisition process."
+        },
+        "TaskDescription_2": {
+            "type": "text",
+            "value": "",
+            "group_id": 6,
+            "position": 2,
+            "description": "Description of the task"
+        },
+        "TaskName_3": {
+            "type": "text",
+            "value": "",
+            "group_id": 7,
+            "position": 1,
+            "required": true,
+            "description": "Code name of the task (no space and only alphanumeric characters).\n Ex: 'rest or facesnback or headnodding'"
+        },
+        "EventsSet_3": {
+            "type": "text",
+            "value": "",
+            "group_id": 7,
+            "position": 4,
+            "description": "Details about the events associated with this set."
+        },
+        "RunNumber_3": {
+            "type": "text",
+            "value": "",
+            "group_id": 7,
+            "position": 0
+        },
+        "StartTime_3": {
+            "type": "text",
+            "value": "",
+            "group_id": 7,
+            "position": 5
+        },
+        "RunComment_3": {
+            "type": "text",
+            "value": "",
+            "group_id": 7,
+            "position": 6,
+            "description": "Comment about the subject behavior during the run."
+        },
+        "Acquisition_3": {
+            "type": "text",
+            "value": "",
+            "group_id": 7,
+            "position": 3,
+            "description": "Details about the acquisition process."
+        },
+        "TaskDescription_3": {
+            "type": "text",
+            "value": "",
+            "group_id": 7,
+            "position": 2,
+            "description": "Description of the task"
+        },
+        "TaskName_4": {
+            "type": "text",
+            "value": "",
+            "group_id": 8,
+            "position": 1,
+            "required": true,
+            "description": "Code name of the task (no space and only alphanumeric characters).\n Ex: 'rest or facesnback or headnodding'"
+        },
+        "EventsSet_4": {
+            "type": "text",
+            "value": "",
+            "group_id": 8,
+            "position": 4,
+            "description": "Details about the events associated with this set."
+        },
+        "RunNumber_4": {
+            "type": "text",
+            "value": "",
+            "group_id": 8,
+            "position": 0
+        },
+        "StartTime_4": {
+            "type": "text",
+            "value": "",
+            "group_id": 8,
+            "position": 5
+        },
+        "RunComment_4": {
+            "type": "text",
+            "value": "",
+            "group_id": 8,
+            "position": 6,
+            "description": "Comment about the subject behavior during the run."
+        },
+        "Acquisition_4": {
+            "type": "text",
+            "value": "",
+            "group_id": 8,
+            "position": 3,
+            "description": "Details about the acquisition process."
+        },
+        "TaskDescription_4": {
+            "type": "text",
+            "value": "",
+            "group_id": 8,
+            "position": 2,
+            "description": "Description of the task"
+        },
+        "TaskName_5": {
+            "type": "text",
+            "value": "",
+            "group_id": 9,
+            "position": 1,
+            "required": true,
+            "description": "Code name of the task (no space and only alphanumeric characters).\n Ex: 'rest or facesnback or headnodding'"
+        },
+        "EventsSet_5": {
+            "type": "text",
+            "value": "",
+            "group_id": 9,
+            "position": 4,
+            "description": "Details about the events associated with this set."
+        },
+        "RunNumber_5": {
+            "type": "text",
+            "value": "",
+            "group_id": 9,
+            "position": 0
+        },
+        "StartTime_5": {
+            "type": "text",
+            "value": "",
+            "group_id": 9,
+            "position": 5
+        },
+        "RunComment_5": {
+            "type": "text",
+            "value": "",
+            "group_id": 9,
+            "position": 6,
+            "description": "Comment about the subject behavior during the run."
+        },
+        "Acquisition_5": {
+            "type": "text",
+            "value": "",
+            "group_id": 9,
+            "position": 3,
+            "description": "Details about the acquisition process."
+        },
+        "TaskDescription_5": {
+            "type": "text",
+            "value": "",
+            "group_id": 9,
+            "position": 1,
+            "description": "Description of the task"
+        },
+        "TaskName_6": {
+            "type": "text",
+            "value": "",
+            "group_id": 10,
+            "position": 1,
+            "required": true,
+            "description": "Code name of the task (no space and only alphanumeric characters).\n Ex: 'rest or facesnback or headnodding'"
+        },
+        "EventsSet_6": {
+            "type": "text",
+            "value": "",
+            "group_id": 10,
+            "position": 4,
+            "description": "Details about the events associated with this set."
+        },
+        "RunNumber_6": {
+            "type": "text",
+            "value": "",
+            "group_id": 10,
+            "position": 0
+        },
+        "StartTime_6": {
+            "type": "text",
+            "value": "",
+            "group_id": 10,
+            "position": 5
+        },
+        "RunComment_6": {
+            "type": "text",
+            "value": "",
+            "group_id": 10,
+            "position": 6,
+            "description": "Comment about the subject behavior during the run."
+        },
+        "Acquisition_6": {
+            "type": "text",
+            "value": "",
+            "group_id": 10,
+            "position": 3,
+            "description": "Details about the acquisition process."
+        },
+        "TaskDescription_6": {
+            "type": "text",
+            "value": "",
+            "group_id": 10,
+            "position": 2,
+            "description": "Description of the task"
+        },
+        "TaskName_7": {
+            "type": "text",
+            "value": "",
+            "group_id": 11,
+            "position": 1,
+            "required": true,
+            "description": "Code name of the task (no space and only alphanumeric characters).\n Ex: 'rest or facesnback or headnodding'"
+        },
+        "EventsSet_7": {
+            "type": "text",
+            "value": "",
+            "group_id": 11,
+            "position": 4,
+            "description": "Details about the events associated with this set."
+        },
+        "RunNumber_7": {
+            "type": "text",
+            "value": "",
+            "group_id": 11,
+            "position": 0
+        },
+        "StartTime_7": {
+            "type": "text",
+            "value": "",
+            "group_id": 11,
+            "position": 5
+        },
+        "RunComment_7": {
+            "type": "text",
+            "value": "",
+            "group_id": 11,
+            "position": 6,
+            "description": "Comment about the subject behavior during the run."
+        },
+        "Acquisition_7": {
+            "type": "text",
+            "value": "",
+            "group_id": 11,
+            "position": 3,
+            "description": "Details about the acquisition process."
+        },
+        "TaskDescription_7": {
+            "type": "text",
+            "value": "",
+            "group_id": 11,
+            "position": 2,
+            "description": "Description of the task"
+        },
+        "TaskName_8": {
+            "type": "text",
+            "value": "",
+            "group_id": 12,
+            "position": 1,
+            "required": true,
+            "description": "Code name of the task (no space and only alphanumeric characters).\n Ex: 'rest or facesnback or headnodding'"
+        },
+        "EventsSet_8": {
+            "type": "text",
+            "value": "",
+            "group_id": 12,
+            "position": 4,
+            "description": "Details about the events associated with this set."
+        },
+        "RunNumber_8": {
+            "type": "text",
+            "value": "",
+            "group_id": 12,
+            "position": 0
+        },
+        "StartTime_8": {
+            "type": "text",
+            "value": "",
+            "group_id": 12,
+            "position": 5
+        },
+        "RunComment_8": {
+            "type": "text",
+            "value": "",
+            "group_id": 12,
+            "position": 6,
+            "description": "Comment about the subject behavior during the run."
+        },
+        "Acquisition_8": {
+            "type": "text",
+            "value": "",
+            "group_id": 12,
+            "position": 3,
+            "description": "Details about the acquisition process."
+        },
+        "TaskDescription_8": {
+            "type": "text",
+            "value": "",
+            "group_id": 12,
+            "position": 2,
+            "description": "Description of the task"
+        },
+        "TaskName_9": {
+            "type": "text",
+            "value": "",
+            "group_id": 13,
+            "position": 1,
+            "required": true,
+            "description": "Code name of the task (no space and only alphanumeric characters).\n Ex: 'rest or facesnback or headnodding'"
+        },
+        "EventsSet_9": {
+            "type": "text",
+            "value": "",
+            "group_id": 13,
+            "position": 4,
+            "description": "Details about the events associated with this set."
+        },
+        "RunNumber_9": {
+            "type": "text",
+            "value": "",
+            "group_id": 13,
+            "position": 0
+        },
+        "StartTime_9": {
+            "type": "text",
+            "value": "",
+            "group_id": 13,
+            "position": 5
+        },
+        "RunComment_9": {
+            "type": "text",
+            "value": "",
+            "group_id": 13,
+            "position": 3,
+            "description": "Comment about the subject behavior during the run."
+        },
+        "Acquisition_9": {
+            "type": "text",
+            "value": "",
+            "group_id": 13,
+            "position": 3,
+            "description": "Details about the acquisition process."
+        },
+        "TaskDescription_9": {
+            "type": "text",
+            "value": "",
+            "group_id": 13,
+            "position": 2,
+            "description": "Description of the task"
+        },
+        "TaskName_10": {
+            "type": "text",
+            "value": "",
+            "group_id": 14,
+            "position": 1,
+            "required": true,
+            "description": "Code name of the task (no space and only alphanumeric characters).\n Ex: 'rest or facesnback or headnodding'"
+        },
+        "EventsSet_10": {
+            "type": "text",
+            "value": "",
+            "group_id": 14,
+            "position": 4,
+            "description": "Details about the events associated with this set."
+        },
+        "RunNumber_10": {
+            "type": "text",
+            "value": "",
+            "group_id": 14,
+            "position": 0
+        },
+        "StartTime_10": {
+            "type": "text",
+            "value": "",
+            "group_id": 14
+        },
+        "RunComment_10": {
+            "type": "text",
+            "value": "",
+            "group_id": 14,
+            "position": 3,
+            "description": "Comment about the subject behavior during the run."
+        },
+        "Acquisition_10": {
+            "type": "text",
+            "value": "",
+            "group_id": 14,
+            "position": 3,
+            "description": "Details about the acquisition process."
+        },
+        "TaskDescription_10": {
+            "type": "text",
+            "value": "",
+            "group_id": 14,
+            "position": 2,
+            "description": "Description of the task"
+        },
+        "MotorThreshold": {
+            "type": "text",
+            "value": "",
+            "description": "Resting motor threshold",
+            "group_id": 15,
+            "position": 0
+        },
+        "intensityFEF": {
+            "type": "text",
+            "value": "",
+            "description": "TMS intensity for FEF stimulation (110% motor threshold)",
+            "group_id": 15,
+            "position": 1
+        },
+        "intensitySham": {
+            "type": "text",
+            "value": "",
+            "description": "TMS intensity for Sham stimulation (130% motor threshold)",
+            "group_id": 15,
+            "position": 2
+        },
+        "MRISubNumber": {
+            "type": "text",
+            "value": "",
+            "description": "Subject number for MRI data",
+            "group_id": 15,
+            "position": 3
+        },
+        "RobotTargets": {
+            "type": "text",
+            "value": "",
+            "description": "Corresponding anatomical targets for robot targets",
+            "group_id": 15,
+            "position": 4
+        },
+        "UseRobot": {
+            "type": "select",
+            "value": "Yes",
+            "options": [
+                "Yes",
+                "No",
+                "Tried but did not work"
+            ],
+            "group_id": 15,
+            "description": "Did you use the robot for this session?",
+            "position": 5
+        }
+    }
+}

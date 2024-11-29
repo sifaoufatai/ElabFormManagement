@@ -1,0 +1,401 @@
+{
+    "elabftw": {
+        "display_main_text": true,
+        "extra_fields_groups": [
+            {
+                "id": 1,
+                "name": "Participant"
+            },
+            {
+                "id": 2,
+                "name": "Session"
+            },
+            {
+                "id": 3,
+                "name": "Run"
+            },
+            {
+                "id": 5,
+                "name": "Optogenetic Stimulation"
+            },
+            {
+                "id": 6,
+                "name": "Behaviour Recording"
+            },
+            {
+                "id": 7,
+                "name": "Pharmacology"
+            },
+            {
+                "id": 8,
+                "name": "Anatomy"
+            },
+            {
+                "id": 9,
+                "name": "Equipment"
+            },
+            {
+                "id": 10,
+                "name": "Post-Processing"
+            },
+            {
+                "id": 11,
+                "name": "Results"
+            },
+            {
+                "id": 12,
+                "name": "Acknowledgments"
+            },
+            {
+                "id": 13,
+                "name": "Miscellaneous"
+            },
+            {
+                "id": 4,
+                "name": "new groupe"
+            }
+        ]
+    },
+    "extra_fields": {
+        "age": {
+            "type": "number",
+            "unit": "",
+            "units": [
+                "years",
+                "months"
+            ],
+            "value": "",
+            "group_id": 1,
+            "position": 2,
+            "description": "GDPR !!!. In years or months. Ex: '42 or 0.4'"
+        },
+        "sex": {
+            "type": "radio",
+            "options": [
+                "F",
+                "M",
+                "Others"
+            ],
+            "group_id": 1,
+            "position": 3,
+            "description": "GDPR"
+        },
+        "Dose": {
+            "type": "number",
+            "value": "",
+            "group_id": "6",
+            "position": "2",
+            "description": "The dose of the drug administered [in mg/kg]",
+            "blank_value_on_duplicate": true
+        },
+        "Drug": {
+            "type": "text",
+            "value": "",
+            "group_id": "6",
+            "position": "1",
+            "description": "The name of the drug administered",
+            "blank_value_on_duplicate": true
+        },
+        "group": {
+            "type": "text",
+            "value": "",
+            "group_id": 1,
+            "position": 4,
+            "description": "Experimental group. Ex: 'control, under 10 years, ...'"
+        },
+        "Strain": {
+            "type": "text",
+            "value": "",
+            "group_id": "1",
+            "position": "3",
+            "description": "The strain of the subject",
+            "blank_value_on_duplicate": false
+        },
+        "Weight": {
+            "type": "number",
+            "value": "",
+            "group_id": "1",
+            "position": "6",
+            "description": "The weight of the subject [in grams]",
+            "blank_value_on_duplicate": false
+        },
+        "TaskName": {
+            "type": "text",
+            "value": "",
+            "group_id": 3,
+            "position": 1,
+            "required": true,
+            "description": "Code name of the task (no space and only alphanumeric characters).\n Ex: 'rest or facesnback or headnodding'"
+        },
+        "References": {
+            "type": "textarea",
+            "value": "",
+            "group_id": "12",
+            "position": "1",
+            "description": "Any relevant references or citations",
+            "blank_value_on_duplicate": true
+        },
+        "Subject ID": {
+            "type": "text",
+            "value": "",
+            "group_id": 1,
+            "position": 0,
+            "description": "subject number or monkey name"
+        },
+        "handedness": {
+            "type": "radio",
+            "options": [
+                "left",
+                "right",
+                "ambidextrous"
+            ],
+            "group_id": 1,
+            "position": 5,
+            "description": "GDPR"
+        },
+        "session_id": {
+            "type": "text",
+            "value": "",
+            "group_id": 2,
+            "position": 0,
+            "required": true,
+            "description": "Ex: '01 or predrug or 20231206'"
+        },
+        "Laser power": {
+            "type": "number",
+            "value": "",
+            "group_id": "5",
+            "position": 1,
+            "description": "The power of the laser used for stimulation [in mW]",
+            "allow_multi_values": true,
+            "blank_value_on_duplicate": true
+        },
+        "Run comment": {
+            "type": "text",
+            "value": "",
+            "group_id": 3,
+            "position": 100,
+            "description": "Comment about the subject behavior during the run."
+        },
+        "Key findings": {
+            "type": "textarea",
+            "value": "",
+            "group_id": "10",
+            "position": "2",
+            "description": "Summary of key findings from the experiment",
+            "blank_value_on_duplicate": true
+        },
+        "Session date": {
+            "type": "date",
+            "value": "",
+            "group_id": "2",
+            "position": "2",
+            "description": "The date of the recording",
+            "blank_value_on_duplicate": true
+        },
+        "Subject GUID": {
+            "type": "text",
+            "value": "",
+            "group_id": 1,
+            "position": 1
+        },
+        "Collaborators": {
+            "type": "text",
+            "value": "",
+            "group_id": "12",
+            "position": "2",
+            "description": "Any collaborators involved in the project",
+            "blank_value_on_duplicate": true
+        },
+        "Behaviour task": {
+            "type": "select",
+            "value": "",
+            "options": [
+                "none",
+                "Open Field",
+                "Y-maze",
+                "T-maze",
+                "Pavlovian Conditioning",
+                "Operant Conditioning"
+            ],
+            "group_id": "5",
+            "position": "1",
+            "description": "The behaviour task used in the experiment",
+            "allow_multi_values": true,
+            "blank_value_on_duplicate": true
+        },
+        "Equipment name": {
+            "type": "text",
+            "value": "",
+            "group_id": "8",
+            "position": "1",
+            "description": "The name of the equipment used",
+            "blank_value_on_duplicate": true
+        },
+        "TaskDescription": {
+            "type": "text",
+            "value": "",
+            "group_id": 3,
+            "position": 2,
+            "description": "Description of the task"
+        },
+        "Calibration date": {
+            "type": "date",
+            "value": "",
+            "group_id": "8",
+            "position": "3",
+            "description": "The date the equipment was last calibrated",
+            "blank_value_on_duplicate": true
+        },
+        "Laser wavelength": {
+            "type": "number",
+            "value": "",
+            "group_id": "5",
+            "position": 0,
+            "description": "The wavelength of the laser used for stimulation [in nm]",
+            "allow_multi_values": true,
+            "blank_value_on_duplicate": false
+        },
+        "Session duration": {
+            "type": "number",
+            "value": "",
+            "group_id": "2",
+            "position": "3",
+            "description": "The duration of the session [in minutes]",
+            "blank_value_on_duplicate": true
+        },
+        "Analysis software": {
+            "type": "text",
+            "value": "",
+            "group_id": "10",
+            "position": "1",
+            "description": "The software used for data analysis",
+            "blank_value_on_duplicate": true
+        },
+        "Anatomical region": {
+            "type": "text",
+            "value": "",
+            "group_id": "7",
+            "position": "1",
+            "description": "The anatomical region being studied",
+            "blank_value_on_duplicate": true
+        },
+        "HeadCircumference": {
+            "type": "number",
+            "unit": "",
+            "units": [
+                "cm"
+            ],
+            "value": "",
+            "group_id": 1,
+            "position": 6,
+            "description": "Ex: '53.5 or 55'"
+        },
+        "Notes on behaviour": {
+            "type": "textarea",
+            "value": "",
+            "group_id": "5",
+            "position": "3",
+            "description": "Notes regarding the behaviour of the subject",
+            "blank_value_on_duplicate": true
+        },
+        "Recording software": {
+            "type": "text",
+            "value": "",
+            "group_id": "5",
+            "position": "2",
+            "description": "The software used for behaviour recording",
+            "blank_value_on_duplicate": true
+        },
+        "Surgical procedure": {
+            "type": "text",
+            "value": "",
+            "group_id": "12",
+            "position": "0",
+            "description": "The surgical procedure performed",
+            "blank_value_on_duplicate": true
+        },
+        "Miscellaneous notes": {
+            "type": "textarea",
+            "value": "",
+            "group_id": "13",
+            "position": "1",
+            "description": "Any additional notes or comments",
+            "blank_value_on_duplicate": true
+        },
+        "Stimulation frequency": {
+            "type": "number",
+            "value": "",
+            "group_id": "5",
+            "position": 2,
+            "description": "The frequency of the stimulation [in Hz]",
+            "allow_multi_values": true,
+            "blank_value_on_duplicate": true
+        },
+        "Equipment manufacturer": {
+            "type": "text",
+            "value": "",
+            "group_id": "9",
+            "position": "2",
+            "description": "The manufacturer of the equipment used",
+            "blank_value_on_duplicate": true
+        },
+        "Histological techniques": {
+            "type": "text",
+            "value": "",
+            "group_id": "8",
+            "position": "3",
+            "description": "Histological techniques used in the experiment",
+            "blank_value_on_duplicate": true
+        },
+        "Route of administration": {
+            "type": "select",
+            "value": "",
+            "options": [
+                "oral",
+                "intravenous",
+                "subcutaneous",
+                "intraperitoneal"
+            ],
+            "group_id": "7",
+            "position": "3",
+            "description": "The route of administration of the drug",
+            "blank_value_on_duplicate": true
+        },
+        "Time since administration": {
+            "type": "number",
+            "value": "",
+            "group_id": "7",
+            "position": "4",
+            "description": "Time since drug administration [in minutes]",
+            "blank_value_on_duplicate": true
+        },
+        "Post-processing techniques": {
+            "type": "text",
+            "value": "",
+            "group_id": "10",
+            "position": "1",
+            "description": "The techniques used for post-processing the data",
+            "blank_value_on_duplicate": true
+        },
+        "fatai": {
+            "type": "text",
+            "value": "",
+            "group_id": 4,
+            "position": "0",
+            "description": "New group description"
+        },
+        "fatai 0": {
+            "example_key": "example_value",
+            "group_id": 4
+        },
+        "fatai 1": {
+            "example_key": "example_value",
+            "group_id": 4
+        },
+        "fatai 2": {
+            "example_key": "example_value",
+            "group_id": 4
+        }
+    }
+}
