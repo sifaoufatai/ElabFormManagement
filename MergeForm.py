@@ -15,7 +15,6 @@ def safe_load_json(filepath):
 
 
 def get_a_jsonfile_structure(jsonfile):
-
     data = safe_load_json(jsonfile)
     extra_fields_groups = data['elabftw']['extra_fields_groups']
     extrat_fields = data['extra_fields']
@@ -111,9 +110,6 @@ def merge_jsonfiles(jsonfile_list_sorted, json_output):
     # Save the final merged data to the output json file
     with open(json_output, 'w') as f:
         json.dump(data, f, indent=4)
-
-
-import argparse
 
 
 def main():
